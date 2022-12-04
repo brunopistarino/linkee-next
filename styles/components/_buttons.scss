@@ -1,0 +1,81 @@
+.btn-primary,
+.btn-secondary,
+.btn-error,
+.btn-social {
+  border-radius: 0.5rem;
+  padding: 0.625rem 1rem;
+  border: none;
+  @include text-sm-medium;
+  @include shadow-xs;
+  transition: all 0.15s ease-in-out;
+  border: 1px solid;
+}
+
+.btn-primary {
+  color: $white;
+  border-color: $primary-600;
+  background-color: $primary-600;
+
+  &:hover {
+    background-color: $primary-700;
+  }
+  &:focus {
+    @include shadow-xs-focused-4-px-primary-100;
+  }
+  &:disabled {
+    background-color: $primary-200;
+  }
+}
+
+.btn-secondary {
+  color: $gray-700;
+  border-color: $gray-300;
+  background-color: $white;
+
+  &:hover {
+    background-color: $gray-100;
+  }
+  &:focus {
+    @include shadow-xs-focused-4-px-gray-100;
+  }
+  &:disabled {
+    border-color: $gray-200;
+    color: $gray-300;
+  }
+}
+
+.btn-error {
+  color: $white;
+  border-color: $error-600;
+  background-color: $error-600;
+
+  &:hover {
+    background-color: $error-700;
+  }
+  &:focus {
+    @include shadow-xs-focused-4-px-error-100;
+  }
+  &:disabled {
+    background-color: $error-200;
+  }
+}
+
+.btn-social {
+  @include text-md-semibold;
+  background-color: $white;
+  border: 1px solid $gray-300;
+  color: $gray-700;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 12px;
+
+  &:hover {
+    background-color: $gray-50;
+  }
+  &:focus {
+    @include shadow-xs-focused-4-px-gray-100;
+  }
+}

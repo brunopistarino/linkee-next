@@ -1,35 +1,26 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
-import LogoIcon from "../components/icons/logo.svg";
-import LogoutIcon from "../components/icons/logout.svg";
+import LogoIcon from "../../components/icons/logo.svg";
+import LogoutIcon from "../../components/icons/logout.svg";
 
-import SectionModal from "../components/SectionModal";
-import SectionView from "../components/SectionView";
+import SectionModal from "../../components/SectionModal";
+import SectionView from "../../components/SectionView";
 // import axios from "axios";
 
-export default function Home({ data }) {
+export default function Home({ data, data2 }) {
   // const { sectionId } = useParams();
   const [sections, setSections] = useState(data);
   const [showSectionModal, setShowSectionModal] = useState(false);
   const showModal = () => setShowSectionModal(true);
   const hideModal = () => setShowSectionModal(false);
   // console.log(sectionId);
-  const sectionId = "tmp";
   console.log(data);
+  console.log(data2);
 
-  // useEffect(() => {
-  //   axios // get all sections
-  //     .get("http://localhost:5001/api/sections")
-  //     .then((res) => {
-  //       console.log(res);
-  //       console.log(res.data);
-  //       setSections(res.data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }, []);
+  const router = useRouter();
+  const { sectionId } = router.query;
 
   return (
     <>
@@ -66,24 +57,29 @@ export default function Home({ data }) {
           </div>
         </nav>
 
-        {/* {sectionId ? (
-          <SectionView sectionId={sectionId} />
-        ) : ( */}
-        <div className="logo-section">
-          <LogoIcon />
-        </div>
-        {/* )} */}
+        {sectionId ? (
+          <SectionView sectionData={data2.section} />
+        ) : (
+          <div className="logo-section">
+            <LogoIcon />
+          </div>
+        )}
       </div>
     </>
   );
 }
 
-export const getServerSideProps = async () => {
+export const getServerSideProps = async (context) => {
   const res = await fetch(process.env.URL + "/api/sections");
   const data = await res.json();
 
+  const { sectionId } = context.params;
+
+  const res2 = await fetch(process.env.URL + "/api/sections/" + sectionId);
+  const data2 = await res2.json();
+
   return {
     // props: { photos: datas.data },
-    props: { data: data.data },
+    props: { data: data.data, data2: data2.data },
   };
 };

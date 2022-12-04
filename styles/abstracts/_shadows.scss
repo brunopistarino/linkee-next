@@ -1,0 +1,75 @@
+@mixin focus-ring-4-px-primary-100 {
+  box-shadow: 0px 0px 0px 4px #f4ebffff;
+}
+@mixin focus-ring-4-px-gray-100 {
+  box-shadow: 0px 0px 0px 4px #f2f4f7ff;
+}
+@mixin focus-ring-4-px-error-100 {
+  box-shadow: 0px 0px 0px 4px #fee4e2ff;
+}
+@mixin focus-ring-4-px-gray-300 {
+  box-shadow: 0px 0px 0px 4px #d0d5ddff;
+}
+@mixin focus-ring-4-px-gray-500 {
+  box-shadow: 0px 0px 0px 4px #667085ff;
+}
+@mixin focus-ring-4-px-primary-500 {
+  box-shadow: 0px 0px 0px 4px #9e77edff;
+}
+@mixin shadow-xs {
+  box-shadow: 0px 1px 2px #1018280d;
+}
+@mixin shadow-xs-focused-4-px-primary-100 {
+  box-shadow: 0px 1px 2px #1018280d, 0px 0px 0px 4px #f4ebffff;
+}
+@mixin shadow-xs-focused-4-px-gray-100 {
+  box-shadow: 0px 1px 2px #1018280d, 0px 0px 0px 4px #f2f4f7ff;
+}
+@mixin shadow-xs-focused-4-px-error-100 {
+  box-shadow: 0px 1px 2px #1018280d, 0px 0px 0px 4px #fee4e2ff;
+}
+@mixin shadow-sm {
+  box-shadow: 0px 1px 3px #1018281a, 0px 1px 2px #1018280f;
+}
+@mixin shadow-sm-focused-4-px-primary-100 {
+  box-shadow: 0px 1px 3px #1018281a, 0px 1px 2px #1018280f,
+    0px 0px 0px 4px #f4ebffff;
+}
+@mixin shadow-sm-focused-4-px-primary-100 {
+  box-shadow: 0px 1px 3px #1018281a, 0px 1px 2px #1018280f,
+    0px 0px 0px 4px #f4ebffff;
+}
+@mixin shadow-sm-focused-4-px-gray-100 {
+  box-shadow: 0px 1px 3px #1018281a, 0px 1px 2px #1018280f,
+    0px 0px 0px 4px #f2f4f7ff;
+}
+@mixin shadow-md {
+  box-shadow: 0px 4px 8px -2px #1018281a, 0px 2px 4px -2px #1018280f;
+}
+@mixin shadow-lg {
+  box-shadow: 0px 12px 16px -4px #10182814, 0px 4px 6px -2px #10182808;
+}
+@mixin shadow-xl {
+  box-shadow: 0px 20px 24px -4px #10182814, 0px 8px 8px -4px #10182808;
+}
+@mixin shadow-2-xl {
+  box-shadow: 0px 24px 48px -12px #1018282e;
+}
+@mixin shadow-3-xl {
+  box-shadow: 0px 32px 64px -12px #10182824;
+}
+@mixin shadow-portfolio-mockup-main-centre-md {
+  box-shadow: 0px 75px 150px #34405424;
+}
+@mixin shadow-portfolio-mockup-main-centre-lg {
+  box-shadow: 0px 100px 200px #3440542e;
+}
+@mixin shadow-portfolio-mockup-overlay-right-lg {
+  box-shadow: -100px 100px 150px #3440541f;
+}
+@mixin shadow-portfolio-mockup-overlay-left-lg {
+  box-shadow: 100px 100px 150px #3440541f;
+}
+@mixin shadow-portfolio-mockup-grid-shadow-md {
+  box-shadow: 32px 32px 64px #34405414;
+}
