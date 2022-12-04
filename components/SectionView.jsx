@@ -12,9 +12,9 @@ const SectionView = ({ sectionData }) => {
   const [showLinkModal, setShowLinkModal] = useState(false);
   const showModal = () => setShowLinkModal(true);
   const hideModal = () => setShowLinkModal(false);
-  console.log("=================");
-  console.log(sectionData);
-  console.log("=================");
+  // console.log("=================");
+  // console.log(sectionData);
+  // console.log("=================");
 
   // useEffect(() => {
   //   const fetchSection = async () => {

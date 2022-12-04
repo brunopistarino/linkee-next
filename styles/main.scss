@@ -13,3 +13,9 @@
 @import "pages/login";
 @import "pages/register";
 @import "pages/notfound";
+
+@layer base {
+  [data-nextjs-scroll-focus-boundary] {
+    display: contents;
+  }
+}
