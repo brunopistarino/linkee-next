@@ -1,0 +1,129 @@
+.modal {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 1050;
+  //   display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(52, 64, 84, 0.7);
+  @include background-blur-md;
+
+  .form-row {
+    align-items: flex-end;
+  }
+
+  .container {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 32px;
+    @include shadow-xl;
+    border-radius: 12px;
+    position: relative;
+  }
+
+  .actions {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: $gray-500;
+  &:hover {
+    color: $gray-700;
+  }
+  padding: 10px;
+  svg {
+    display: block;
+  }
+}
+
+.emoji-selector {
+  display: flex;
+  // flex-direction: column;
+  // gap: 12px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 250px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  // gap: 6px;
+  border: 1px solid $gray-300;
+  border-radius: 0.5rem;
+  @include shadow-xs;
+  padding: 4px;
+  justify-content: space-between;
+
+  // display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+
+  //   .emoji {
+  //     display: flex;
+  //     flex-direction: row;
+  //     align-items: center;
+  //     cursor: pointer;
+  //     padding: 8px;
+  //     border: none;
+  //     background: none;
+  //     &:hover {
+  //       // background-color: $gray-50;
+  //       background-color: $gray-200;
+  //     }
+  //     font-size: 24px;
+  //     .emoji-name {
+  //       @include text-md-normal;
+  //       color: $gray-900;
+  //     }
+  //   }
+  p {
+    font-size: 1.75rem !important;
+    margin-top: 0 !important;
+    line-height: normal !important;
+    // display: flex;
+    // flex: 1 1 0;
+    border-radius: 0.5rem;
+    height: 2.75rem;
+    width: 2.75rem;
+    line-height: 2.75rem !important;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      // background-color: $gray-50;
+      background-color: $gray-200;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.emoji-input {
+  font-size: 5rem;
+  // width: 5rem;
+  // height: 5rem;
+}

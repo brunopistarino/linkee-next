@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@mixin display-2-xl-regular {
+  font-size: 4.5rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 90px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-2-xl-medium {
+  font-size: 4.5rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 90px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-2-xl-semibold {
+  font-size: 4.5rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 90px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-2-xl-bold {
+  font-size: 4.5rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 90px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-xl-normal {
+  font-size: 3.75rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-xl-medium {
+  font-size: 3.75rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-xl-semibold {
+  font-size: 3.75rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-xl-bold {
+  font-size: 3.75rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-lg-normal {
+  font-size: 3rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-lg-medium {
+  font-size: 3rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-lg-semibold {
+  font-size: 3rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-lg-bold {
+  font-size: 3rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-md-normal {
+  font-size: 2.25rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-md-medium {
+  font-size: 2.25rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-md-semibold {
+  font-size: 2.25rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-md-bold {
+  font-size: 2.25rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-sm-normal {
+  font-size: 1.875rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 38px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-sm-medium {
+  font-size: 1.875rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 38px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-sm-semibold {
+  font-size: 1.875rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 38px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-sm-bold {
+  font-size: 1.875rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 38px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-sm-medium-italic {
+  font-size: 1.875rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: italic;
+  line-height: 44px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-xs-normal {
+  font-size: 1.5rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-xs-medium {
+  font-size: 1.5rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-xs-semibold {
+  font-size: 1.5rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-xs-bold {
+  font-size: 1.5rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin display-xs-medium-italic {
+  font-size: 1.5rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: italic;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xl-normal {
+  font-size: 1.25rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xl-medium {
+  font-size: 1.25rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xl-semibold {
+  font-size: 1.25rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xl-bold {
+  font-size: 1.25rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xl-normal-italic {
+  font-size: 1.25rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: italic;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xl-medium-italic {
+  font-size: 1.25rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: italic;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xl-semibold-italic {
+  font-size: 1.25rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xl-bold-italic {
+  font-size: 1.25rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: italic;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xl-normal-underlined {
+  font-size: 1.25rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: underline;
+  text-transform: none;
+}
+@mixin text-lg-normal {
+  font-size: 1.125rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-lg-medium {
+  font-size: 1.125rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-lg-semibold {
+  font-size: 1.125rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-lg-bold {
+  font-size: 1.125rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-lg-normal-italic {
+  font-size: 1.125rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: italic;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-lg-medium-italic {
+  font-size: 1.125rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: italic;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-lg-semibold-italic {
+  font-size: 1.125rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-lg-bold-italic {
+  font-size: 1.125rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: italic;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-lg-regular-underlined {
+  font-size: 1.125rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  text-decoration: underline;
+  text-transform: none;
+}
+@mixin text-lg-medium-underlined {
+  font-size: 1.125rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 28px;
+  text-decoration: underline;
+  text-transform: none;
+}
+@mixin text-md-normal {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-md-medium {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-md-semibold {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-md-bold {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-md-normal-italic {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: italic;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-md-medium-italic {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: italic;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-md-semibold-italic {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-md-bold-italic {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: italic;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-md-normal-underlined {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: underline;
+  text-transform: none;
+}
+@mixin text-md-medium-underlined {
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: underline;
+  text-transform: none;
+}
+@mixin text-sm-normal {
+  font-size: 0.875rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-sm-medium {
+  font-size: 0.875rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-sm-semibold {
+  font-size: 0.875rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-sm-bold {
+  font-size: 0.875rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-sm-normal-underlined {
+  font-size: 0.875rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  text-decoration: underline;
+  text-transform: none;
+}
+@mixin text-xs-normal {
+  font-size: 0.75rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xs-medium {
+  font-size: 0.75rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xs-semibold {
+  font-size: 0.75rem;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: none;
+}
+@mixin text-xs-bold {
+  font-size: 0.75rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: none;
+}
