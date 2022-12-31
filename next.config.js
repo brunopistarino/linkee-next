@@ -11,6 +11,16 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "s2.googleusercontent.com",
+        port: "",
+        pathname: "/s2/favicons",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;
